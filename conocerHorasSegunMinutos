@@ -1,0 +1,7 @@
+function saberNumeroHoras(resultadoHoras) {
+   var horas = resultadoHoras / 60;
+   console.log(Math.round(horas))
+   
+}
+
+saberNumeroHoras(140);
