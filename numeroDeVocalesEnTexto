@@ -1,0 +1,40 @@
+function contadorDeVocales(texto) {
+
+    var numeroDeVocales = 0;
+
+    var textoarray = texto.split("");
+
+    for (var i = 0; i < textoarray.length ; i++) {
+
+        if (textoarray[i] == "a") {
+            numeroDeVocales++;
+        } 
+
+        if (textoarray[i] == "e") {
+            numeroDeVocales++;
+        }
+
+        if (textoarray[i] == "i") {
+            numeroDeVocales++;
+        }
+
+        if (textoarray[i] == "o") {
+            numeroDeVocales++;
+        }
+
+        if (textoarray[i] == "u") {
+            numeroDeVocales++;
+        }
+
+    }
+
+    return numeroDeVocales;
+
+}
+
+
+var textoAContar = prompt("Ingresa la palabra a saber ");
+
+var resultado = contadorDeVocales(textoAContar);
+
+console.log(resultado);
